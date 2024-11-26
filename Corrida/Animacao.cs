@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using FFImageLoading.Maui;
 
 public class Animacao
 {
@@ -11,8 +12,8 @@ public class Animacao
     protected int AnimacaoAtiva = 1;
     bool Parado = true;
     int FrameAtual = 1;
-    protected Image CompImagem;
-    public Animacao(Image a)
+    protected CachedImageView CompImagem;
+    public Animacao(CachedImageView a)
     {
         CompImagem = a;
     }

@@ -1,5 +1,7 @@
 ﻿
 
+using Corrida;
+
 namespace corrida;
 
 public partial class MainPage : ContentPage
@@ -19,7 +21,7 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-		player = new Player(imgPlayer);
+		player = new Player(imgplayer);
 		player.Run();
 	}
     protected override void OnSizeAllocated(double w, double h)
